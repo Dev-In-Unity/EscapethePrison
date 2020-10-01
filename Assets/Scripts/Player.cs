@@ -10,15 +10,16 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 10f;
 
     //States
+    bool isAlive = true;
 
     //Cached reference
     Rigidbody2D myRigidbody;
-    
+    Animator myAnimator;
     
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
-        
+        myAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -32,6 +33,11 @@ public class Player : MonoBehaviour
         float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
+
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        myAnimator.SetBool("Running", playerHasHorizontalSpeed);     
+
+
     }
 
     private void FlipSprite()
