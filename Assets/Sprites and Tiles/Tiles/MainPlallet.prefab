@@ -9104,6 +9104,15 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 1, y: 2, z: 0}
+    second:
+      m_TileIndex: 1025
+      m_TileSpriteIndex: 1024
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 0, y: 5, z: 0}
     second:
       m_TileIndex: 4
@@ -9260,7 +9269,7 @@ Tilemap:
   - first: {x: -2, y: 20, z: 0}
     second:
       m_TileIndex: 1024
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 52
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -11318,10 +11327,12 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 6c35527c0cd8f834586deb050e28ad4c, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 59694cf47716fd54c80c022561ba9cd3, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 0bfbb85983f9a8042a974465fc2c24e3, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 595819513250821940, guid: b9de75cd9e6e71d4daff930b649349eb, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: -1250722835113537707, guid: b9de75cd9e6e71d4daff930b649349eb,
       type: 3}
   - m_RefCount: 1
@@ -11469,7 +11480,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 4929459071099439226, guid: b9de75cd9e6e71d4daff930b649349eb,
       type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 6989869269358853541, guid: b9de75cd9e6e71d4daff930b649349eb,
       type: 3}
   - m_RefCount: 1
@@ -14333,8 +14344,11 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 2145486000584242858, guid: b9de75cd9e6e71d4daff930b649349eb,
       type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -7733179201971891346, guid: 5dd835f43dc127048854805dfc579ad0,
+      type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1025
+  - m_RefCount: 1026
     m_Data:
       e00: 1
       e01: 0
@@ -14353,7 +14367,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1025
+  - m_RefCount: 1026
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14435,7 +14449,7 @@ GameObject:
   - component: {fileID: 8453006548808931546}
   - component: {fileID: 9066107390142305229}
   m_Layer: 31
-  m_Name: Manual Tiles
+  m_Name: MainPlallet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
