@@ -18,7 +18,7 @@ TagManager:
   - Player
   - Background
   - Enemy
-  - 
+  - Harzards
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 6804103
+    locked: 0
+  - name: Harzards
+    uniqueID: 886920721
     locked: 0
   - name: Player
     uniqueID: 3616629903
