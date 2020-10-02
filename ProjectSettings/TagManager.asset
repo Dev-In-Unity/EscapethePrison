@@ -19,8 +19,8 @@ TagManager:
   - Background
   - Enemy
   - Harzards
-  - 
-  - 
+  - ExitPortal
+  - Interactables
   - 
   - 
   - 
@@ -53,9 +53,15 @@ TagManager:
   - name: Harzards
     uniqueID: 886920721
     locked: 0
+  - name: ExitPortal
+    uniqueID: 1212622545
+    locked: 0
   - name: Player
     uniqueID: 3616629903
     locked: 0
   - name: Foreground
     uniqueID: 4248156825
+    locked: 0
+  - name: Interactables
+    uniqueID: 3456607791
     locked: 0
