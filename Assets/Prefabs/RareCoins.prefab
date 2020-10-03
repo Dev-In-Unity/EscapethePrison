@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4427036020473200995}
   - component: {fileID: 6267959777322424490}
   m_Layer: 15
-  m_Name: Coins
+  m_Name: RareCoins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7663339850136890938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.05, y: -1.59, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPickUpSFX: {fileID: 8300000, guid: 66b10690ff671f2438bcf08c660735c4, type: 3}
-  pointsForCoinPickup: 50
+  pointsForCoinPickup: 100
 --- !u!82 &6267959777322424490
 AudioSource:
   m_ObjectHideFlags: 0
