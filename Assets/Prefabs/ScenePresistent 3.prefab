@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7882385712385997188}
   - component: {fileID: 7168279353487709085}
   m_Layer: 15
-  m_Name: ScenePresistent
+  m_Name: ScenePresistent 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

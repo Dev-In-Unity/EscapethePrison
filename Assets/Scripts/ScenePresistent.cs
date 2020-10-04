@@ -5,34 +5,37 @@ using UnityEngine.SceneManagement;
 
 public class ScenePresistent : MonoBehaviour
 {
+    static ScenePresistent instance = null;
+
     int startingSceneIndex;
 
-    private void Awake()
+    void Start()
     {
-        int numScenePresistent = FindObjectsOfType<ScenePresistent>().Length;
-        if (numScenePresistent > 1)
+        if (!instance)
         {
-            Destroy(gameObject);
-        }
-        else
-        {
+            instance = this;
+            SceneManager.sceneLoaded += OnSceneLoaded;
+            startingSceneIndex = SceneManager.GetActiveScene().buildIndex;
             DontDestroyOnLoad(gameObject);
         }
-    }
-
-    private void Start()
-    {
-        startingSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        
-    }
-
-    private void Update()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-        if(currentSceneIndex != startingSceneIndex)
+        else if (instance != this)
         {
             Destroy(gameObject);
-        } 
+        }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (startingSceneIndex != SceneManager.GetActiveScene().buildIndex)
+        {
+            instance = null;
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+            Destroy(gameObject);
+        }
     }
 }
+
+
+
+
+

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34163ecfd5101194f935f31e8d075827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 10
-  jumpSpeed: 25
-  climbSpeed: 5
+  runSpeed: 8
+  jumpSpeed: 22
+  climbSpeed: 4
   deathKick: {x: 0, y: 25}
